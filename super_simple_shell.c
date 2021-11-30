@@ -15,9 +15,10 @@ int main(void)
 	char *token = NULL;
 	size_t bufsize = 32;
 	int chars = 0;
-	char *ar[2];
+	char *arg[2], *ex[2];
 	pid_t p = 0;
 
+	ex[0] = "exit";
 	while (1)
 	{
 		_putchar ('$');/*prompt*/
@@ -29,14 +30,16 @@ int main(void)
 			free(token);
 			return (-1);
 		}
+		arg[0] = strtok(buffer, "\n");
+		arg[1] = NULL;
+		if (arg[0] == ex[0])/*no logro implementar el exit*/
+			return (0);
 		p = fork();
 		if (p == 0)
 		{
-			ar[0] = strtok(buffer, "\n");
-			ar[1] = NULL;
-			if (execve(ar[0], ar, NULL) == -1)
+			if (execve(arg[0], arg, NULL) == -1)
 			{
-				printf("hsh: %s: command not found\n", ar[0]);
+				printf("hsh: %s: command not found\n", arg[0]);
 				return (-1);
 			}
 			exit(0);

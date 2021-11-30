@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "main.h"
 /**
  * main - simple shell
  * Description: we are trying to write a simple shell from scratch
