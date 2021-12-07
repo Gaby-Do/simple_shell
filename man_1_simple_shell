@@ -1,0 +1,72 @@
+.TH man_1_simple_shell(3) "08 December 2021" "simple_shell manual"
+
+.TH man_1_simple_shell(3)
+
+.Sh NAME
+.B simple_shell: hsh
+-  a simplified UNIX command interpreter (shell)
+
+.SH SYNOPSIS
+.B This simple shell is executed by typing ./hsh
+.RB int main(void)
+
+.SH DESCRIPTION
+.B simple_shell 
+This shell is an end of trimester school project. Tries to imitate the function of a real shell.
+
+.RS
+.nf
+- Works in interactive and non interactive mode
+- Handles commands with or without a full path
+- Handles commands with or without arguments
+.RE
+
+
+.SH BUILT-INS
+.IP "env"
+Prints the current environment
+
+.IP "exit"
+Exits the shell
+
+.SH FILES
+.TP
+.I
+/simple_shell/man_1_simple_shell
+
+.SH EXAMPLES
+.TP
+.BI GJR >/bin/ls
+.TP
+.PP
+Runs the ls command in interactive mode.
+.TP
+.BI GJR >ls
+.TP
+.PP
+Runs the ls command in interactive mode.
+
+.TP
+.BI $ ls | ./hsh
+.TP
+.PP
+Runs the ls command in non interactive mode.
+
+
+.SH EXIT STATUS
+.TP
+.B
+0
+Success
+
+
+.SH FOR INFO ON REAL SHELL SEE
+.BR sh man page
+
+.SH COPYRIGHT
+.PP
+Copyright 2021 @Juan Valentin Gimenez @Raymundo Barrera Flores @Gabriela Dominguez Faget
+
+.SH CREDITS
+.PP
+This man page is created as part of a school project for Holberton School.
