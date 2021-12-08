@@ -11,8 +11,16 @@ char **valida(char *string)
 	int k = _ctoks(string);
 
 	if (!string)
+	{
 		return (final);
+	}
 	tekila = _toks(string);
+	if (!tekila[0])
+	{
+		free(string);
+		free(tekila);
+		return (final);
+	}
 	if (_strcmp(tekila[0], en) == 0)
 	{
 		_fpptonks(tekila, k);
