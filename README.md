@@ -22,14 +22,37 @@ This project was made during the end of the first trimester in holberton school.
 -Handle the End Of File condition
 -What happens when you type `ls -l *.c` in the shell - blog
 
+#### Flowchart:
+
+Through this flowchart, you can visualize the shell algorithm step by step.
+
+![flowchart](https://mail.google.com/mail/u/0?ui=2&ik=757c49fa75&attid=0.1&permmsgid=msg-f:1718524060863415269&th=17d96c8739b9c3e5&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9J8fk9sI8kVl6dNkmXiBv4FbM7dvWPA0hziq-Erqpu5_SZqSrf2wWzTSgcwLXgp8CUewnCHexDgqy7CxuKrwOrdaNLvCHaqWLPxcuOv_7JcCIQ70svrDbdFLY&disp=emb&realattid=ii_kwwm16330)
+
 #### File description:
 
+- AUTHORS: authors of simple_shell project
+- README.md: readme
+- Aux functions: _prints.c & _putchar.c
+- buit_in.c: env and exit built-ins
+- concat.c: str functions
+- ejecuta.c: function that executes
+- getpath1.c: findis PATH and parses it
+- hsh: executable 
+- man_1_simple_shell: man of simple_shell
+- path_fun.c
+- shell.c
+- shell.h
+- str_fun.c
+- str_fun1.c
+- toks.c
+- valida.c
 
 #### Compilation
+
 The shell is compiled this way:
 > `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh `
 
-##Authors:
+#### Authors:
 
 Raymundo Barrera Flores - <A HREF="https://www.linkedin.com/in/raymundo-barrera-a13022222/"> Linkedin </A>
 
@@ -37,5 +60,7 @@ Gabriela Dominguez - <A HREF="https://www.linkedin.com/in/maria-gabriela-domingu
 
 Juan Giménez - <A HREF="https://www.linkedin.com/in/juan-valentin-gimenez-denis-381b01214/"> Linkedin </A>
 
-## License
+#### License
 No license.
+
+End of readme.
