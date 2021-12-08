@@ -12,7 +12,7 @@ int _env(void)
 		_prints(environ[index]);
 		++index;
 	}
-	return (0);
+	return (1);
 }
 
 /**
