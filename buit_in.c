@@ -3,16 +3,16 @@
  *_env - prints current env
  *Return: 0 succes
  */
-void _env(char **arv __attribute__ ((unused)))
+int _env(void)
 {
 	int index = 0;
 
 	while (environ[index])
 	{
 		_prints(environ[index]);
-		_prints('\n');
 		++index;
 	}
+	return (0);
 }
 
 /**
