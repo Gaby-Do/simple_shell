@@ -1,4 +1,5 @@
 # Simple_shell
+
 This project was made during the end of the first trimester in holberton school. The target of this project is to create a imitation of the shell, however it does not work exactly as the shell (sh) itself.
 
 ##### General requirements:
@@ -17,34 +18,19 @@ This project was made during the end of the first trimester in holberton school.
 -UNIX command line interpreter.
 -Handle command lines with arguments
 -Handle the PATH
--Create the exit built-in
--Create the env built-in
+-Implement the exit built-in
+-Implement the env built-in
 -Handle the End Of File condition
--What happens when you type `ls -l *.c` in the shell - blog
+-blog
 
 #### Flowchart:
 
 Through this flowchart, you can visualize the shell algorithm step by step.
 
-![image](https://github.com/Gaby-Do/simple_shell/blob/master/image/flow_shell.png)
+![FlowChartSimpleShell](https://user-images.githubusercontent.com/85518777/145214693-94e3f422-9cd1-48c1-866d-69289f46a27c.png)
 
-#### File description:
-- AUTHORS: authors of simple_shell project
-- README.md: readme
-- Aux functions: _prints.c & _putchar.c
-- buit_in.c: env and exit built-ins
-- concat.c: str functions
-- ejecuta.c: function that executes
-- getpath1.c: findis PATH and parses it
-- hsh: executable 
-- man_1_simple_shell: man of simple_shell
-- path_fun.c
-- shell.c
-- shell.h
-- str_fun.c
-- str_fun1.c
-- toks.c
-- valida.c
+#### Holberton Shell examples:
+
 
 #### Compilation
 
