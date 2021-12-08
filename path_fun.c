@@ -33,7 +33,6 @@ char **_path_fun(char **tekila)
 			l = lenaa(paty);
 			_fpptonks(paty, l);
 			free(patito);
-			for (contador = 0; final[contador] != NULL; contador++)
 			return (final);
 		}
 		m++;

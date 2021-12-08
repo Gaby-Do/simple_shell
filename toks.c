@@ -45,6 +45,8 @@ int _ctoks(char *s)
 	char *tok = NULL, *trab = NULL, deli[] = "'\n''\t' :", temp[1024];
 	int i = 0;
 
+	for (i = 0; i < 1024; i++)
+		temp[i] = '\0';
 	i = 0;
 	trab = _strcpy(temp, s);
 	tok = strtok(trab, deli);
@@ -68,6 +70,9 @@ char **_toks(char *s)
 	char deli[] = "'\n''\t' :", *tok = NULL, temp[1024], **argv, *str = NULL;
 	int i = 0, len = _ctoks(s);
 
+	for (i = 0; i < 1024; i++)
+		temp[i] = '\0';
+	i = 0;
 	argv = malloc(sizeof(char *) * len);
 	str = _strcpy(temp, s);
 

@@ -8,9 +8,9 @@
 
 int _prints(char *c)
 {
-  int i = 0;
+	int i = 0;
 
-  for ( ; c[i]; i++)
-    ;
-  return (write(1, c, i));
+	for ( ; c[i]; i++)
+		;
+	return (write(1, c, i));
 }
