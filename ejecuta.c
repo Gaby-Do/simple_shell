@@ -18,7 +18,8 @@ int ejecuta(char **args)
 	{
 		if (execve(args[0], args, NULL) == -1)
 		{
-			perror("Error");
+			_prints("hsh: ");
+			perror(args[0]);
 			exit(1);
 		}
 	}
