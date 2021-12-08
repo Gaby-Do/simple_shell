@@ -3,17 +3,17 @@
  *_env - prints current env
  *Return: 0 succes
  */
-int _env(void)
+void _env(void)
 {
   int index = 0;
 
-  while (environ[index])
+  while (environ[index] != NULL)
     {
-      _prints(environ[index]);
-      _putchar('\n');
-      ++index;
+      write(STDOUT_FILENO, environ[i], strlen(environ[i]));
+      write(STDOUT_FILENO, "\n", 1); /** puts not worked*/
     }
-  return (0);
+}
+     
 }
 
 /**
