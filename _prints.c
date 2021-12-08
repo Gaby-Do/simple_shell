@@ -12,5 +12,5 @@ int _prints(char *c)
 
 	for ( ; c[i]; i++)
 		;
-	return (write(1, c, i));
+	_putchar(c[i]);
 }
