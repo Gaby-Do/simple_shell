@@ -22,6 +22,7 @@ void ex_it(void);
 /* de impresión*/
 int _putchar(char c);
 int _prints(char *c);
+void _error(char *s);
 
 /* de operación*/
 char *prompt(void);

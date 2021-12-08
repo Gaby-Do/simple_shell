@@ -7,7 +7,7 @@
 char **_path_fun(char **tekila)
 {
 	char **paty = NULL, *pato = NULL, *patito = NULL, **final = NULL, *deli = "/";
-	int flag = 1, k = lenaa(tekila), l = 0, m = 0, n = 0;
+	int flag = 1, k = lenaa(tekila), l = 0, m = 0, n = 0, contador = 0;
 	struct stat buf;
 
 	paty = _path();
@@ -33,14 +33,15 @@ char **_path_fun(char **tekila)
 			l = lenaa(paty);
 			_fpptonks(paty, l);
 			free(patito);
+			for (contador = 0; final[contador] != NULL; contador++)
 			return (final);
 		}
 		m++;
-		free(pato);
-		free(patito);
+		free(pato), free(patito);
 	}
 	if (flag != 0)
 	{
+		_error(tekila[0]);
 		_fpptonks(tekila, k), l = lenaa(paty), _fpptonks(paty, l);
 		return (NULL);
 	}
