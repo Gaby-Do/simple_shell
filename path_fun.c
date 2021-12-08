@@ -7,7 +7,7 @@
 char **_path_fun(char **tekila)
 {
 	char **paty = NULL, *pato = NULL, *patito = NULL, **final = NULL, *deli = "/";
-	int flag = 1, k = lenaa(tekila), l = 0, m = 0, n = 0, contador = 0;
+	int flag = 1, k = lenaa(tekila), l = 0, m = 0, n = 0;
 	struct stat buf;
 
 	paty = _path();

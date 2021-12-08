@@ -15,12 +15,14 @@ int main(void)
 	{
 		s = NULL;
 		args = NULL;
-		_prints("GJR >");
+		if (isatty(STDIN_FILENO))
+			_prints("GJR >");
 		n = getline(&s, &n1, stdin);
 		if (n == -1)
 		{
 			free(s);
-			_putchar('\n');
+			if (isatty(STDIN_FILENO))
+				_putchar('\n');
 			exit(0);
 		}
 		args = valida(s);
