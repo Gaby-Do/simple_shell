@@ -31,6 +31,10 @@ Through this flowchart, you can visualize the shell algorithm step by step.
 
 #### Holberton Shell examples:
 
+This is how our shell work with basic commands such as ls or rm.
+
+<img width="811" alt="shellexample" src="https://user-images.githubusercontent.com/85518777/145217144-60fbddf0-f8ad-41f3-a64a-94ceb62f248a.png">
+
 
 #### Compilation
 
