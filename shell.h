@@ -17,7 +17,7 @@ extern char **environ;
 /* builtins*/
 void built_in(char *string);
 int _env(void);
-int ex_it(void);
+void ex_it(void);
 
 /* de impresión*/
 int _putchar(char c);

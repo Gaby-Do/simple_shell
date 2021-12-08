@@ -21,7 +21,7 @@ int _env(void)
  * Return: no return
  */
 
-int ex_it(void)
+void ex_it(void)
 {
   exit(EXIT_SUCCESS);
 }
