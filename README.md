@@ -26,7 +26,7 @@ This project was made during the end of the first trimester in holberton school.
 
 Through this flowchart, you can visualize the shell algorithm step by step.
 
-![image]()
+![image](https://github.com/Gaby-Do/simple_shell/blob/master/image/flow_shell.png)
 
 #### File description:
 - AUTHORS: authors of simple_shell project
