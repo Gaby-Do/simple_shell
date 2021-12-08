@@ -5,14 +5,15 @@
  */
 int _env(void)
 {
-	int index = 0;
+  int index = 0;
 
-	while (environ[index])
-	{
-		_prints(environ[index]);
-		++index;
-	}
-	return (1);
+  while (environ[index])
+    {
+      _prints(environ[index]);
+      _putchar('\n');
+      ++index;
+    }
+  return (0);
 }
 
 /**
@@ -22,5 +23,5 @@ int _env(void)
 
 int ex_it(void)
 {
-	exit(0);
+  exit(EXIT_SUCCESS);
 }
