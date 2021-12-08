@@ -1,5 +1,9 @@
 # Simple_shell
 
+
+![shell (2) (2)](https://user-images.githubusercontent.com/85518777/145223341-03cf3151-b6a0-4bba-b5c4-c124377cb234.jpg)
+
+
 This project was made during the end of the first trimester in holberton school. The target of this project is to create a imitation of the shell, however it does not work exactly as the shell (sh) itself.
 
 ##### General requirements:
