@@ -23,5 +23,5 @@ int _env(void)
 
 int ex_it(void)
 {
-	exit();
+	exit(0);
 }
