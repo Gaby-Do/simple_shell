@@ -1,14 +1,17 @@
 .TH man_1_simple_shell(3) "08 December 2021" "simple_shell manual"
 
+.B run with groff -man -Tascii man_1_simple_shell
+
 .TH man_1_simple_shell(3)
 
-.Sh NAME
+.SH NAME
 .B simple_shell: hsh
 -  a simplified UNIX command interpreter (shell)
 
 .SH SYNOPSIS
 .B This simple shell is executed by typing ./hsh
-.RB int main(void)
+
+.B int main(void)
 
 .SH DESCRIPTION
 .B simple_shell 
@@ -51,13 +54,6 @@ Runs the ls command in interactive mode.
 .TP
 .PP
 Runs the ls command in non interactive mode.
-
-
-.SH EXIT STATUS
-.TP
-.B
-0
-Success
 
 
 .SH FOR INFO ON REAL SHELL SEE
