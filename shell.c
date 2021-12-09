@@ -23,14 +23,17 @@ int main(void)
 			free(s);
 			if (isatty(STDIN_FILENO))
 				_putchar('\n');
-			exit(0);
+			exit(2);
 		}
-		args = valida(s);
-		if (args)
+		if (s)
 		{
-			ejecuta(args);
-			c = lenaa(args);
-			_fpptonks(args, c);
+			args = valida(s);
+			if (args)
+			{
+				ejecuta(args);
+				c = lenaa(args);
+				_fpptonks(args, c);
+			}
 		}
 	}
 	if (s)
